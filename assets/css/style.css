@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #555555;
+}
+
+#content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes button_color {
+    from {background-color: #ffde00;}
+    to {background-color: #fff192;}
+  }
+
+@keyframes button_color_reverse {
+    from {background-color: #fff192;}
+    to {background-color: #ffde00;}
+  }
+
+@keyframes copyright_color {
+    from {color: #ffffff;}
+    to {color: #fff192;}
+  }
+
+@keyframes copyright_color_reverse {
+    from {color: #fff192;}
+    to {color: #ffffff;}
+  }
+
+.button {
+    background-color: #ffde00;
+    color: #ffffff;
+    font-size: 40px;
+    height: 115px;
+    width: 115px;
+    line-height: 115px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: bold;
+    margin: 50px;
+    margin-top: calc(100vh / 2 - 57.5px);
+    cursor: pointer;
+    animation-name: button_color_reverse;
+    animation-duration: 0.5s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #fff192;
+    font-size: 45px;
+    animation-name: button_color;
+    animation-duration: 0.3s;
+}
+
+#main {
+    height: 80vh;
+    width: calc(100% - 430px);
+    background-color: #434343;
+    margin-top: calc(100vh / 2 - 40vh);
+    border-radius: 9px;
+}
+
+#car_name {
+    color: #ffffff;
+    background-color: #ffde00;
+    border-radius: 9px;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 45px;
+    padding-left: 25px;
+    font-weight: bold;
+    border-bottom: 7px solid #a79100;
+}
+
+#car_name a {
+    text-decoration: none;
+    float: right;
+    margin-right: 25px;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+#car_img {
+    height: 68vh;
+    width: calc(100% - 15px);
+    margin: 0 auto;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#car_img ul {
+    background-color: #434343e1;
+    border-radius: 9px;
+    list-style: none;
+    padding: 10px;
+    min-width: 140px;
+    min-height: 130px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#car_img ul li {
+    color: #ffffff;
+}
+
+#copyright {
+    color: #ffffff;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#copyright a {
+    text-decoration: none;
+    animation-name: copyright_color_reverse;
+    animation-duration: 0.7s;
+    color: #ffffff;
+}
+
+#copyright a:hover {
+ animation-name: copyright_color;
+ animation-duration: 0.7s;
+ color: #fff192;
+}

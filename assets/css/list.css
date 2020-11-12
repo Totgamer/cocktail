@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #555555;
+}
+
+.list_item {
+    color: #ffffff;
+    background-color: #ffde00;
+    border-radius: 9px;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 15px;
+    padding-left: 25px;
+    font-weight: bold;
+    border-bottom: 7px solid #a79100;
+    margin-bottom: 10px;
+}
+
+#container ul {
+    text-align: center;
+}
+
+#container ul li{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 95vw;
+    justify-content: space-between;
+}
+
+.c_like {
+    margin-right: 15px;
+}
+
+.c_like i {
+    margin-right: 5px;
+    font-size: 12px;
+}
